@@ -34,6 +34,7 @@ public class testes {
         setores.close();
         fornecedores.close();
         equipamentos.close();
+
     }
 }
 
