@@ -20,7 +20,7 @@ public class Usuario {
 
     static private HashSenhas hs = new HashSenhas();
 
-    private  boolean isAdmin;
+    // private  boolean isAdmin;
 
 
 

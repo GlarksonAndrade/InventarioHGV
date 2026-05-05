@@ -17,28 +17,34 @@ public class Equipamento {
     private String ip;
     private String marca;
     private String modelo;
-    private String serialOuTomb;
+    private String serial;
+    private int tombamento;
     @ManyToOne
     private Fornecedor fornecedor;
+
+    private String tipo;
 
 
     public Equipamento() {
     }
 
-    public Equipamento(Setor setor, String hostname, int tag, String ip, String marca, String modelo, String serialOuTomb, Fornecedor fornecedor) {
+    public Equipamento(Setor setor, String hostname, int tag, String ip, String marca, String modelo, String serial, Fornecedor fornecedor) {
         this.setor = setor;
         this.hostname = hostname;
         this.tag = tag;
         this.ip = ip;
         this.marca = marca;
         this.modelo = modelo;
-        this.serialOuTomb = serialOuTomb;
+        this.serial = serial;
+        this.tombamento = tombamento;
         this.fornecedor = fornecedor;
+        this.tipo = tipo;
 
     }
 
+
     public String toString(){
-        return getSetor() + getHostname() + getTag() + getIp() + getMarca() + getModelo() + getSerialOuTomb() + getFornecedor();
+        return getSetor() + getHostname() + getTag() + getIp() + getMarca() + getModelo() + getSerial() + getTombamento() + getFornecedor() + getTipo();
     }
 
 
@@ -100,13 +106,17 @@ public class Equipamento {
         this.modelo = modelo;
     }
 
-    public String getSerialOuTomb() {
-        return serialOuTomb;
+    public String getSerial() {
+        return serial;
     }
 
-    public void setSerialOuTomb(String serialOuTomb) {
-        this.serialOuTomb = serialOuTomb;
+    public void setSerial(String serial) {
+        this.serial = serial;
     }
+
+    public int getTombamento() { return tombamento; }
+
+    public void setTombamento(int tombamento) {this.tombamento = tombamento; }
 
     public Fornecedor getFornecedor() {
         return fornecedor;
@@ -114,5 +124,13 @@ public class Equipamento {
 
     public void setFornecedor(Fornecedor fornecedor) {
         this.fornecedor = fornecedor;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

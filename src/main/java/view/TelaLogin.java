@@ -22,7 +22,7 @@ public class TelaLogin extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        Image image = new Image(getClass().getResourceAsStream("/hgv.jpg"));
+        Image image = new Image(getClass().getResourceAsStream("/hgv2.png"));
         ImageView imageView = new ImageView(image);
         imageView.setY(50);
 
@@ -78,7 +78,7 @@ public class TelaLogin extends Application {
         gridpane.add(labelSenha,0, 1);
         gridpane.add(campoSenha,1,1);
 
-        Image iconeAplicacao = new Image(getClass().getResourceAsStream("/icone.png"));
+        Image iconeAplicacao = new Image(getClass().getResourceAsStream("/hgv2.png"));
         stage.getIcons().add(iconeAplicacao);
 
         Label login = new Label("Login");

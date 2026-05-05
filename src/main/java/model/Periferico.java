@@ -46,7 +46,7 @@ public class Periferico {
     }
 
     // Metodo para desconsiderar o uso da TAG
-    // Objeto do tipo monitor não recebve TAG
+    // Objeto do tipo monitor não recebe TAG
 
     void seMonitor() {
         if (tipoPeriferico.equals("MONITOR") ) {
