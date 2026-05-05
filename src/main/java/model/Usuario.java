@@ -3,7 +3,7 @@ package model;
 import javax.persistence.*;
 
 @Entity(name = "usuarios")
-@Table(schema = "inventario")
+@Table(name = "usuarios")
 @NamedQuery(name = "usuarios.findByLogin", query = "SELECT u FROM usuarios u WHERE u.login = :login")
 public class Usuario {
     @Id
